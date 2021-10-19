@@ -21,6 +21,20 @@
     <!-- bootstrap local css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <style>
+        .css:hover{
+            background: rgb(199, 199, 199);
+            transition: 0.7s;
+        }
+        .cssbtn{
+            background: #f0c24d;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .cssbtn:hover{
+            background: #ffc107;
+        }
+    </style>
+
     <title>Hello, world!</title>
 </head>
 
@@ -139,6 +153,108 @@
         
         </div>
     </nav>
+
+
+
+    <div class="container my-5">
+        <!-- progress status -->
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+                <p></p>
+                <p class="mb-0 pb-0"><i class="fas fa-cart-arrow-down fa-3x"></i></p>
+                <p></p>
+                <p></p>
+             </div>
+        </div>
+
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 12.5%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%; background: #e47911;"></div>
+          </div>
+
+          
+            <div class="d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+                <p>sign in</p>
+                <p class="font-weight-bold">delivery & payment</p>
+                <p class="text-muted">place order</p>
+                <p class="text-muted">complete payment</p>
+             </div>
+        
+
+
+        <h3 class="mt-3">Select a payment method</h3>
+        <div class="row">
+            <div class="col-md-9 border rounded mt-2 pt-4 pb-3 px-4">
+                <div class="row mb-2 border-bottom">
+                    <div class="col-md-7">
+                        <h4>Payment Methods</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">Company</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="font-weight-bold">Reach</p>
+                    </div>
+                </div>
+
+                
+                <div class="row css py-3">
+                    <div class="col-md-7">
+                        <div class="form-check">
+                            <label>
+                            <input class="form-check-input  mt-3" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            
+                                <img class="ml-2" src="img/payment method/2560px-Paytm_Logo_(standalone).svg.png" height="33px" width="130px">
+                            </label>
+                          </div>
+                          
+                    </div>
+                    <div class="col-md-3">
+                        <p>PayTM</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Local</p>
+                    </div>
+                </div>
+
+                
+                <div class="row css py-3">
+                    <div class="col-md-7"><label>
+                        <div class="form-check">
+                            
+                            <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            
+                                <img class="mt-n2 ml-1" src="img/payment method/logo-gp3.svg" height="40px" width="130px">
+                            
+                          </div>
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Google</p>
+                    </div>
+                    <div class="col-md-2">
+                        <p>International</p>
+                    </div>
+                </div>
+            
+
+
+            </div>
+            <div class="col-md-3 mt-2">
+                <div class="card" style="background: #f7f7f7;">
+                    <div class="card-body">
+                        <div class="btn btn-block cssbtn" >
+                            Continue
+                        </div>
+                        <div class="text-center mt-2" style="font-size: 13px;">You can review this order before it's final.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

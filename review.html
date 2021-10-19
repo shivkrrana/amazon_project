@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="img/amazonfavicon.ico" image="image/gif" size="16x16">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- drawer css -->
+    <link rel="stylesheet" href="css/bootstrap-drawer.min.css">
+    <!-- font awessome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap local css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>rEVIEW</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- drawer -->
+        <button class="btn btn-outline-light"><i class="fas fa-sliders-h" data-toggle="drawer"
+                data-target="#draweramazon"></i></button>
+        <!-- drawer starts -->
+        <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-demo-title"
+            aria-hidden="true" id="draweramazon">
+            <div class="drawer-content drawer-content-scrollable" role="document">
+                <div class="drawer-header bg-dark text-white">
+                    <h4 class="drawer-title mx-auto" id="drawer-demo-title"><i class="fas fa-user-circle"></i>
+                        Hello, Sign In
+                    </h4>
+                </div>
+                <div class="drawer-body">
+                    <h6 class="text-muted text-uppercase">Help & Settings</h6>
+                    <a href="#" class="btn btn-outline-success btn-sm my-2">Your Account</a>
+                    <a href="login.html" class="btn btn-warning btn-sm my-2">Signin</a>
+                </div>
+                <div class="drawer-footer"><button type="button" class="btn btn-outline-secondary btn-block btn-sm"
+                        data-dismiss="drawer" aria-label="Close">
+                        <i class="fas fa-2x fa-times"></i>
+                    </button></div>
+            </div>
+        </div>
+        <!-- drawer ends -->
+        <a class="navbar-brand" href="#"><img src="img/amazon.png" height="30" width="100" class="mx-2 pl-2"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <form action="" class="form-inline px-2">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">All</a>
+                                <a class="dropdown-item" href="#">Smartphone</a>
+                                <a class="dropdown-item" href="#">Kitchen Hardware</a>
+                            </div>
+                        </div>
+                        <input type="text" size="60" class="form-control" name="query" id="query">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link" href="#" id="prefLanguageDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-2x fa-language"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="prefLanguageDropdown">
+                        <form class="p-2">
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="preflan" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="custom-control-label" for="exampleRadios1">
+                                    <img src="img/flag/english.png" height="30" width="50" alt="">
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="preflan" id="exampleRadios2"
+                                    value="option1" checked>
+                                <label class="custom-control-label" for="exampleRadios2">
+                                    <img src="img/flag/hindi.png" height="30" width="50" alt="">
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="preflan" id="exampleRadios3"
+                                    value="option1" checked>
+                                <label class="custom-control-label" for="exampleRadios3">
+                                    <img src="img/flag/urdu.jpg" height="30" width="50" alt="">
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" name="preflan" id="exampleRadios4"
+                                    value="option1" checked>
+                                <label class="custom-control-label" for="exampleRadios4">
+                                    <img src="img/flag/bangla.png" height="30" width="50" alt="">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link" href="#" id="useraccount" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-2x fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-menu px-4" aria-labelledby="useraccount">
+                        <div class="d-flex row  justify-content-center">
+                            <a class="btn btn-warning w-75" href="login.html">SignIn</a>
+                            <small class="text-muted" style="font-size: 12px;">New Customer? <a
+                                    href="register.html">Start here</a></small>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a href="" class="nav-link">
+                        <i class="fas fa-2x fa-shopping-cart text-light"></i>
+                        <span class="badge badge-warning badge-pill">10</span>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container my-5">
+        <!-- progress status -->
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+                <p></p>
+                <p></p>
+                <p class="mb-0 pb-0"><i class="fas fa-cart-arrow-down fa-3x"></i></p>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 25%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 25%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 12.5%; background: #e47911;"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                style="width: 0%; background: #e47911;"></div>
+        </div>
+
+
+        <div class="d-flex flex-row text-uppercase justify-content-around" style="font-size: 12px;">
+            <p>sign in</p>
+            <p>delivery & payment</p>
+            <p class="font-weight-bold">place order</p>
+            <p class="text-muted">complete payment</p>
+        </div>
+
+
+
+        <h3>Review your order</h3>
+        <p>By placing your order, you agree to Amazon's privary notice and conditions of use.</p>
+
+        <!-- <div class="dropdown-divider"></div> -->
+        <hr>
+
+        <div class="row p-0 m-0 ">
+            <div class="col-md-8 m-0 p-0">
+                <div class="  ml-0 py-3 px-4 border rounded">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <h6 class="font-weight-bold">Shipping Address</h6>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <h6 class="font-weight-bold">Billing Address</h6>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h6 class="font-weight-bold d-flex justify-content-center">Payment Method</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4" style="font-size: 15px;">
+                            <p class="m-0 py-0">Sandeep Ganguly</p>
+                            <p class="m-0 py-0">House No. 123</p>
+                            <p class="m-0 py-0">ABC</p>
+                            <p class="m-0 py-0">Kanpur, Uttar Pradesh 123456</p>
+                            <p class="m-0 py-0">Phone Number: 1234567890</p>
+
+                        </div>
+
+                        <div class="col-md-4" style="font-size: 15px;">
+                            <p class="m-0 py-0">Sandeep Ganguly</p>
+                            <p class="m-0 py-0">House No. 123</p>
+                            <p class="m-0 py-0">ABC</p>
+                            <p class="m-0 py-0">Kanpur, Uttar Pradesh 123456</p>
+                            <p class="m-0 py-0">Phone Number: 1234567890</p>
+                        </div>
+
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <img src="img/payment method/b.png" height="110px" width="110px" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="  ml-0 py-3 px-4 border rounded my-3">
+
+                    <div class="row mt-2 pt-3">
+                        <div class="col-md-3">
+                            <img src="img/product/1.jpg" height="150px" width="150px" alt="">
+                        </div>
+                        <div class="col-md-7">
+                           <div class="font-weight-bold"> Mivi DuoPods M80 True Wireless Bluetooth Earbuds with Qualcomm Aptx, Studio Sound, Powerful Bass, 30 Hours of Battery and Ear po…</div>
+                           <small style="color: #427a29;">In stock</small>
+                           <div class="text-muted " style="font-size: 14px;">Eligible for FREE Shipping</div>
+                           <img src="img/product/fba-badge_18px._CB485936079_.png" height="18px" width="66px" alt="" class="d-block mb-2">
+                           <select class="custom-select" style="width: 60px; height: 35px;"  id="inputGroupSelect01">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                          <a href="" class="ml-2" style="color: #17819b;"><small>Delete</small> </a>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="float-right">
+                            <i class="fas fa-rupee-sign"></i><p class="font-weight-bold m-0 p-0 d-inline " style="font-size: 18px;">840.00</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="  ml-0 py-3 px-4 border rounded my-3">
+
+                    <div class="row mt-2 pt-3">
+                        <div class="col-md-3">
+                            <img src="img/product/3.jpg" height="150px" width="150px" alt="">
+                        </div>
+                        <div class="col-md-7">
+                           <div class="font-weight-bold">Apple iPhone 11 (64GB) - Black</div>
+                           <small style="color: #427a29;">In stock</small>
+                           <div class="text-muted " style="font-size: 14px;">Eligible for FREE Shipping</div>
+                           <img src="img/product/fba-badge_18px._CB485936079_.png" height="18px" width="66px" alt="" class="d-block mb-2">
+                           <select class="custom-select" style="width: 60px; height: 35px;"  id="inputGroupSelect01">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                          <a href="" class="ml-2" style="color: #17819b;"><small>Delete</small> </a>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="float-right">
+                            <i class="fas fa-rupee-sign"></i><p class="font-weight-bold m-0 p-0 d-inline " style="font-size: 18px;">40,999.00</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            <div class="col-md-4 pl-5 pr-0 m-0">
+                <div class="">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="btn btn-warning btn-block mb-2">Place Your Order And Pay</div>
+                            <p>You'll be securely redirected to Visa to enter your password and complete your purchase.
+                            </p>
+                            <div class="font-weight-bold">Order Summary</div>
+                            <div class="d-flex justify-content-between">
+                                <small>Items:</small>
+                                <small><i class="fas fa-rupee-sign"></i>600.00</small>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <small>Delivery:</small>
+                                <small><i class="fas fa-rupee-sign"></i>0.00</small>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex justify-content-between">
+                                <div class="text-danger font-weight-bold" style="font-size: ;">Order Total:</div>
+                                <div class="text-danger font-weight-bold" style="font-size: ;"><i
+                                        class="fas fa-rupee-sign"></i>600.00</div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="d-flex justify-content-between">
+                                <div class="text-danger font-weight-bold" style="font-size: ;">Your Savings</div>
+                                <div class="text-danger font-weight-bold" style="font-size: ;"><i
+                                        class="fas fa-rupee-sign"></i>297.00 (33%)</div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="">
+                                <p class="text-primary">How are delivery costs calculated?</p>
+                                <p>Amazon Prime Delivery has been applied to the eligible items in your order.</p>
+                                <div class="btn btn-danger btn-block text-light">Cancel Order</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- drawer js -->
+    <script src="js/bootstrap-drawer.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

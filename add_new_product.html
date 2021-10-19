@@ -139,6 +139,193 @@
         
         </div>
     </nav>
+
+
+    <div class="container my-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent ml-n3">
+                <li class="breadcrumb-item"><a href="your_seller_account.html">Your Seller Account</a></li>
+                <li class="breadcrumb-item active text-warning" aria-current="page">Add new Product</li>
+            </ol>
+        </nav>
+        <h3>Add New Product</h3>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <label fpr="productCategory" class="font-weight-bold mt-1">Select Category</label>
+            <select class="form-control d-inline ml-3" style="width: 150px; " id="productCategory " name="productCategory">
+                <option>All</option>
+                <option>Book</option>
+                <option>Smartphone</option>
+                <option>Furniture</option>
+                <option>Fashion</option>
+                
+             </select>
+            </div>
+        </div>
+
+        <form action="#" enctype="multipart/form-data" class="my-3" autocomplete="off" novalidate>
+            <div class="card mx-auto" style="width: 50rem;">
+                <div class="card-header bg-warning">
+                    <p class="font-weight-bold mb-0">Product General Information</p>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="productTitle">Product Title</label>
+                        <input type="text" class="form-control" id="productTitle"  placeholder="ABC Product" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productDescription">Decription</label>
+                        <textarea type="text" class="form-control" id="productDescription"  rows="3" required></textarea>
+                        <small class="text-muted">Write description with comma(,) seperate values to create a list</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productPrice">Price</label>
+                        <input type="text" class="form-control" id="productPrice"  placeholder="150.00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productDiscount">Discount(%)</label>
+                        <input type="text" class="form-control" id="productDiscount"  placeholder="150.00" required>
+                    </div>
+
+                    <input type="text" value="" name="productCategory" id="productCategory" hidden>
+
+                </div>
+            </div>
+
+
+            <div class="card mx-auto mt-3" style="width: 50rem;">
+                <div class="card-header bg-warning">
+                    <p class="font-weight-bold mb-0">
+                        Search Page Image Upload
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="searchPageImage">Search Page Image</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                <small class="text-muted font-weight-bold ">( width >= 130px or 170px <= Width ) And ( Height = 218 px )</small>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="img/add product/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mx-auto mt-3" style="width: 50rem;">
+                <div class="card-header bg-warning">
+                    <p class="font-weight-bold mb-0">
+                        Product Main Page Image Upload
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="searchPageImage">Product Main Page Image 01</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+
+                            <div class="form-group">
+                                <label for="searchPageImage">Product Main Page Image 02</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+
+                            <div class="form-group">
+                                <label for="searchPageImage">Product Main Page Image 03</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+
+                            <div class="form-group">
+                                <label for="searchPageImage">Product Main Page Image 04</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+                            <small class="text-muted font-weight-bold ">( width >= 500px or 650px <= Width ) And ( Height >= 618px or 700px <= Height )</small>
+                        </div>
+
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="img/add product/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card mx-auto mt-3" style="width: 50rem;">
+                <div class="card-header bg-warning">
+                    <p class="font-weight-bold mb-0">
+                        Shopping Cart Page Image Upload
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="searchPageImage">Shopping Cart Page Image 01</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+
+                            
+                            <small class="text-muted font-weight-bold ">( width >= 180px ) And ( Height = 180px )</small>
+                        </div>
+
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="img/add product/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mx-auto mt-3" style="width: 50rem;">
+                <div class="card-header bg-warning">
+                    <p class="font-weight-bold mb-0">
+                        Your orders Page Image Upload
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="searchPageImage">Your Orders Page Image 01</label>
+                                <input type="file" class="form-control-file" id="searchPageImage" required>
+                                
+                            </div>
+
+                            
+                            <small class="text-muted font-weight-bold ">( width >= 57px or 60px <= Width ) And ( Height = 90px )</small>
+                        </div>
+
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="img/add product/4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card mt-3 mx-auto" style="width: 50rem;">
+                <button type="submit" class="btn btn-sm btn-warning">
+                    <div class="card-body py-0">
+                        <i class="fas fa-cart-plus fa-3x"> Create</i>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
